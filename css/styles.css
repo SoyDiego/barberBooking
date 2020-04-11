@@ -1,0 +1,133 @@
+:root {
+	--pink: #ff6347;
+	--white: #ffffff;
+	--purple: #20222b;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: var(--white);
+	background: url(../img/background.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Lato", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#div {
+	display: none;
+}
+
+#showMessage {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.error {
+	width: 100%;
+	height: 60px;
+	background-color: red;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 1s ease;
+}
+
+.error p{
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.container-form {
+	width: 400px;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-top: 8px solid var(--pink);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 1s ease;
+	padding-top: 80px;
+}
+
+.input-form {
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+label {
+	margin: 20px;
+}
+
+input {
+	width: 50%;
+	border: none;
+	border-bottom: 4px solid var(--pink);
+	background: transparent;
+	color: var(--pink);
+	text-align: center;
+	font-size: 18px;
+}
+
+select {
+	width: 50%;
+	border: none;
+	border-bottom: 4px solid var(--pink);
+	background: transparent;
+	color: var(--pink);
+	font-size: 18px;
+	text-align-last: center;
+}
+
+.input-form-radio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+}
+
+.btn {
+	width: 80px;
+	height: 40px;
+	color: white;
+	border: 2px solid var(--pink);
+	background-color: transparent;
+	padding: 10px;
+	margin: 10px 10px;
+	transition: 2s ease;
+}
+
+.btn:hover {
+	background-color: var(--pink);
+}
